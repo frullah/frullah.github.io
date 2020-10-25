@@ -14,10 +14,13 @@
     "sirv": "^1.0.0"
   },
   "devDependencies": {
-    "sapper": "^0.28.0",
-    "svelte": "^3.17.3",
     "file-loader": "^6.0.0",
+    "sapper": "^0.28.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.4",
+    "svelte": "^3.17.3",
     "svelte-loader": "^2.9.0",
+    "svelte-preprocess": "^4.5.2",
     "webpack": "^4.7.0",
     "webpack-modules": "^1.0.0"
   }
