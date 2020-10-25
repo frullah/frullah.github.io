@@ -1,34 +1,7 @@
-<script>
-</script>
-
-<style lang="scss">
-	h1, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>Sapper + Tailwind project template</title>
+	<title>Fajarullah</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h2>Hi, my name is Fajarullah</h2>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p>I am a software developer, which is mostly active in web development</p>
