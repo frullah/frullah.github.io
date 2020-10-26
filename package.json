@@ -9,8 +9,10 @@
     "test": "run-p --race dev cy:run",
     "watch:tailwind": "postcss src/assets/global.scss -o static/global.css -w",
     "build:tailwind": "NODE_ENV=production postcss src/assets/global.scss -p scss -o static/global.css",
-    "build": "npm run build:tailwind && sapper build"
+    "build": "npm run build:tailwind && sapper build",
+    "deploy": "gh-pages -d __sapper__/export"
   },
+  "homepage": "https://frullah.github.io",
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
@@ -21,6 +23,7 @@
     "autoprefixer": "^10.0.1",
     "cssnano": "^4.1.10",
     "file-loader": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "postcss": "^8.1.4",
     "postcss-cli": "^8.1.0",
     "postcss-import": "^13.0.0",
