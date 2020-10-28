@@ -9,7 +9,7 @@
 	<title>{status}</title>
 </svelte:head>
 
-<div class="container p-4 mx-auto">
+<div class="container">
 	<h1>{status}</h1>
 	
 	<p>{error.message}</p>
