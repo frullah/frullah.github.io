@@ -7,6 +7,7 @@
     "Javascript",
     "Ruby",
     "Ruby on rails",
+    "Tailwind CSS",
     "Bootstrap",
     "Vue",
     "Vuetify",
@@ -17,7 +18,7 @@
 
 <section id="skills">
   <div class="container">
-    <h2 class="text-center mb-2">Skills</h2>
+    <h2 class="section-title">Skills</h2>
     <ul class="text-center">
       {#each skills as skill}
         <li class="inline-block m-1">

@@ -9,6 +9,9 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import { preprocess } from './svelte.config';
+import markdown from '@jackfranklin/rollup-plugin-markdown'
+import glob from 'rollup-plugin-glob'
+import alias from '@rollup/plugin-alias';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -19,11 +22,21 @@ const onwarn = (warning, onwarn) =>
 	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
 	onwarn(warning);
 
+const aliases = alias({
+	resolve: ['.svelte', '.js'],
+	entries: [
+		{ find: '@', replacement: 'src' }
+	]
+})
+
 export default {
 	client: {
 		input: config.client.input(),
 		output: config.client.output(),
 		plugins: [
+			aliases,
+			markdown(),
+			glob(),
 			replace({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
@@ -74,6 +87,9 @@ export default {
 		input: config.server.input(),
 		output: config.server.output(),
 		plugins: [
+			aliases,
+			markdown(),
+			glob(),
 			replace({
 				'process.browser': false,
 				'process.env.NODE_ENV': JSON.stringify(mode)

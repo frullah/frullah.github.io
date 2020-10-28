@@ -1,0 +1,51 @@
+<script>
+  import Tag from "./Tag.svelte";
+
+  export let project;
+
+  function setProjectToNull() {
+    project = null;
+  }
+</script>
+
+{#if project}
+  <div
+    class="fixed z-10 inset-0 overflow-y-auto content-center items-center justify-center flex">
+    <div
+      class="fixed inset-0 transition-opacity bg-gray-700 opacity-50"
+      on:click={setProjectToNull} />
+
+    <div
+      class=" bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle md:max-w-4xl sm:w-full"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-headline">
+      <div class="p-6">
+        <div class="modal-title flex items-center">
+          <h3 class="font-bold flex-grow" id="modal-headline">
+            {project.metadata.name}
+          </h3>
+          <button
+            class="font-bold text-xl px-4 py-2"
+            on:click={setProjectToNull}>×</button>
+        </div>
+        <div class="modal-body flex">
+          <div class="w-5/12">
+            <h4 class="font-bold">{project.metadata.category}</h4>
+            <article class="my-4">
+              {@html project.html}
+            </article>
+            <ul>
+              {#each project.metadata.stacks as stack}
+                <li class="inline-block m-1">
+                  <Tag text={stack} />
+                </li>
+              {/each}
+            </ul>
+          </div>
+          <div class="w-7/12"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}

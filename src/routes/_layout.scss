@@ -6,12 +6,12 @@
   @apply py-4;
 
   @screen md {
-    @apply py-8
+    @apply py-8;
   }
 }
 
 :global(.container) {
-  @apply py-4
+  @apply py-4;
 }
 
 :global(h1) {
@@ -24,4 +24,12 @@
 
 :global(h3) {
   @apply text-xl;
+}
+
+:global(h4) {
+  @apply text-lg;
+}
+
+:global(.section-title) {
+  @apply text-center mb-4;
 }

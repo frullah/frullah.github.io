@@ -65,9 +65,8 @@
   </div>
   <div class="nav-items w-full block flex-grow lg:flex lg:items-center lg:w-auto" class:show={show}>
     <div class="text-sm sm:flex-grow">
-      <a href={'#'} class="nav-item {segment}">Home</a>
-      <a href="#skills" class="nav-item">Skills</a>
-      <a href="#projects" class="nav-item">Projects</a>
+      <a href="." class="nav-item {segment}">Home</a>
+      <a href="projects" class="nav-item">Projects</a>
     </div>
   </div>
 </nav>
