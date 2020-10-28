@@ -1,50 +1,17 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+  import ContactIcons from "../components/ContactIcons.svelte";
 </script>
 
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Fajarullah</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<div class="container p-4">
+  <h2 class="mb-2">Hi, my name is Fajarullah</h2>
 
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+  <p class="mb-4">
+    I am a software developer, which is mostly active in web development.
+  </p>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+  <ContactIcons />
+</div>

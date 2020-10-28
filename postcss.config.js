@@ -11,7 +11,15 @@ if (process.env.NODE_ENV === 'production') {
     defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
     safelist: [
       'body',
-      'html'
+      'html',
+      'contact-icon',
+      'fa-envelope',
+      'fa-github-square',
+      'fa-whatsapp-square',
+      'tag',
+      /tippy-/,
+      /data-tippy-root/,
+      'tippy-box[data-animation=scale-subtle][data-placement^=bottom]'
     ]
   })
   plugins.push(purgecss)

@@ -1,22 +1,25 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-
-	export let segment;
+	import Navbar from "../components/Navbar.svelte";
+	
+  export let segment;
 </script>
 
 <style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+:global(h1) {
+  @apply text-3xl;
+}
+
+:global(h2) {
+  @apply text-2xl;
+}
+
+:global(h3) {
+  @apply text-xl;
+}
 </style>
 
-<Nav {segment}/>
+<Navbar {segment} />
 
 <main>
-	<slot></slot>
+  <slot />
 </main>
