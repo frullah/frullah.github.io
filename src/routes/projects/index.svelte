@@ -25,7 +25,7 @@
   }
 </style>
 
-<section id="projects">
+<main>
   <div class="container">
     <h2 class="section-title">Projects</h2>
     <div class="project-list">
@@ -39,6 +39,6 @@
       {/each}
     </div>
   </div>
-</section>
+</main>
 
 <ProjectDetail {project} />

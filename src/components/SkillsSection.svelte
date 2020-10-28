@@ -7,8 +7,6 @@
     "Javascript",
     "Ruby",
     "Ruby on rails",
-    "Tailwind CSS",
-    "Bootstrap",
     "Vue",
     "Vuetify",
     "PostgreSQL",

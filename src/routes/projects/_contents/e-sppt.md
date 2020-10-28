@@ -11,4 +11,4 @@ stacks:
 thumbnail: null
 ---
 
-e-SPPT adalah aplikasi berbasis web yang digunakan untuk mencetak SPPT online, hasil cetak e-SPPT mengandung QR Code yang digunakan untuk mengecek keabsahan e-SPPT tersebut.
+e-SPPT adalah aplikasi berbasis web yang digunakan untuk mencetak SPPT online. memiliki QR Code untuk menandakan legalitas dokumen tersebut.

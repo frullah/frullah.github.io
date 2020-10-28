@@ -2,14 +2,6 @@
   @apply text-gray-800;
 }
 
-:global(section) {
-  @apply py-4;
-
-  @screen md {
-    @apply py-8;
-  }
-}
-
 :global(.container) {
   @apply py-4;
 }

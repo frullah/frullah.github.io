@@ -16,11 +16,11 @@
       on:click={setProjectToNull} />
 
     <div
-      class=" bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle md:max-w-4xl sm:w-full"
+      class=" bg-white rounded-lg overflow-hidden shadow-xl transform transition-all md:max-w-5xl sm:w-full"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-headline">
-      <div class="p-6">
+      <div class="p-4 sm:p-6">
         <div class="modal-title flex items-center">
           <h3 class="font-bold flex-grow" id="modal-headline">
             {project.metadata.name}
@@ -29,8 +29,8 @@
             class="font-bold text-xl px-4 py-2"
             on:click={setProjectToNull}>×</button>
         </div>
-        <div class="modal-body flex">
-          <div class="w-5/12">
+        <div class="modal-body flex flex-wrap">
+          <div class="w-full md:w-6/12">
             <h4 class="font-bold">{project.metadata.category}</h4>
             <article class="my-4">
               {@html project.html}
@@ -43,7 +43,7 @@
               {/each}
             </ul>
           </div>
-          <div class="w-7/12"></div>
+          <div class="w-full md:w-6/12"></div>
         </div>
       </div>
     </div>
