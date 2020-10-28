@@ -14,6 +14,7 @@
     "start": "node __sapper__/build",
     "serve": "serve ___sapper__/export"
   },
+  "homepage": "https://frullah.github.io",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
