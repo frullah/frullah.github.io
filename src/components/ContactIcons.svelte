@@ -1,35 +1,35 @@
 <script>
-  import { faWhatsappSquare } from "@fortawesome/free-brands-svg-icons";
-  import { faGithubSquare } from "@fortawesome/free-brands-svg-icons/faGithubSquare";
-  import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
-  import ContactIcon from "../components/ContactIcon.svelte";
+  import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
+  import { faGithubSquare } from '@fortawesome/free-brands-svg-icons/faGithubSquare'
+  import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope'
+  import ContactIcon from '../components/ContactIcon.svelte'
 
   const links = [
     {
-      href: "mailto:frullah12@gmail.com",
+      href: 'mailto:frullah12@gmail.com',
       icon: faEnvelope,
-      content: "frullah12@gmail.com",
+      content: 'frullah12@gmail.com'
     },
     {
-      href: "https://web.whatsapp.com/send?phone=+6285939936593",
+      href: 'https://web.whatsapp.com/send?phone=+6285939936593',
       icon: faWhatsappSquare,
-      content: "+62-859-3993-6593",
+      content: '+62-859-3993-6593'
     },
     {
-      href: "https://github.com/frullah",
+      href: 'https://github.com/frullah',
       icon: faGithubSquare,
-      content: "@frullah",
-    },
-  ];
+      content: '@frullah'
+    }
+  ]
 </script>
 
 <style>
-ul li {
+:global(.contact-icon-list > li) {
   @apply inline-block m-1;
 }
 </style>
 
-<ul class="contact-icons">
+<ul class="contact-icon-list">
   {#each links as link (link.icon)}
     <li>
       <ContactIcon {...link} />

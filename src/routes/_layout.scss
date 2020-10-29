@@ -2,6 +2,14 @@
   @apply text-gray-800;
 }
 
+:global(section) {
+  @apply py-2;
+
+  @screen md {
+    @apply py-4;
+  }
+}
+
 :global(.container) {
   @apply py-4;
 }
@@ -23,5 +31,5 @@
 }
 
 :global(.section-title) {
-  @apply text-center mb-4;
+  @apply mb-4;
 }

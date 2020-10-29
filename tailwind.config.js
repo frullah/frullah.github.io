@@ -26,8 +26,10 @@ module.exports = {
       screens: {
         xl: '1024px'
       }
-      
     },
+  },
+  corePlugins: {
+    animation: false
   },
   variants: {},
   plugins: [],

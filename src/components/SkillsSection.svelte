@@ -1,28 +1,29 @@
 <script>
-  import Tag from "../components/Tag.svelte";
+  import { ScrollableSection } from '@beyonk/svelte-scrollspy'
+
+  import TagList from './TagList.svelte'
 
   const skills = [
-    "Git",
-    "HTML",
-    "Javascript",
-    "Ruby",
-    "Ruby on rails",
-    "Vue",
-    "Vuetify",
-    "PostgreSQL",
-    "MariaDB",
-  ];
+    'HTML',
+    'Javascript',
+    'Ruby',
+    'Ruby on rails',
+    'Vue',
+    'Vuetify',
+    'PostgreSQL',
+    'MariaDB'
+  ]
 </script>
 
-<section id="skills">
+<style>
+  :global(.skill-list) {
+    @apply max-w-lg;
+  }
+</style>
+
+<ScrollableSection id="skills">
   <div class="container">
     <h2 class="section-title">Skills</h2>
-    <ul class="text-center">
-      {#each skills as skill}
-        <li class="inline-block m-1">
-          <Tag text={skill} />
-        </li>
-      {/each}
-    </ul>
+    <TagList tags={skills} class="skill-list" />
   </div>
-</section>
+</ScrollableSection>

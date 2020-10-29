@@ -1,10 +1,10 @@
 <script>
-  import Tag from "./Tag.svelte";
+  import Tag from './Tag.svelte'
 
-  export let project;
+  export let project
 
-  function setProjectToNull() {
-    project = null;
+  function setProjectToNull () {
+    project = null
   }
 </script>
 

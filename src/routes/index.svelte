@@ -1,19 +1,26 @@
+<script context="module">
+  export async function preload() {
+    const res = await this.fetch("projects.json");
+    const projects = await res.json();
+    return { projects };
+  }
+</script>
+
 <script>
+  import HomeSection from "@/components/HomeSection.svelte";
+  import ProjectSection from "@/components/ProjectSection.svelte";
   import SkillsSection from "@/components/SkillsSection.svelte";
-import ContactIcons from "../components/ContactIcons.svelte";
+
+  export let projects;
 </script>
 
 <svelte:head>
   <title>Fajarullah</title>
 </svelte:head>
 
-<section>
-  <div class="container text-center sm:text-left">
-    <h2 class="mb-2">Hi, I am Fajarullah</h2>
-    <p class="mb-4">I am a software developer, i like to do web development stuff.</p>
 
-    <ContactIcons />
-  </div>
-</section>
-
-<SkillsSection />
+<main>
+  <HomeSection />
+  <SkillsSection />
+  <ProjectSection {projects} />
+</main>
