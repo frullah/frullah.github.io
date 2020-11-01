@@ -1,5 +1,5 @@
 <script>
-  import { faCircle } from "@fortawesome/free-solid-svg-icons/faCircle";
+  import { faCircle,  } from "@fortawesome/free-solid-svg-icons/faCircle";
   import Icon from "fa-svelte";
   import tippy from "sveltejs-tippy";
 
