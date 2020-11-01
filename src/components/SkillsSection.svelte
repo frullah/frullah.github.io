@@ -6,6 +6,7 @@
   const skills = [
     'HTML',
     'Javascript',
+    'Tailwind CSS',
     'Ruby',
     'Ruby on rails',
     'Vue',
@@ -15,9 +16,13 @@
   ]
 </script>
 
-<style>
+<style lang="scss">
   :global(.skill-list) {
-    @apply max-w-lg;
+    @apply max-w-lg text-center;
+
+    @screen sm {
+      @apply text-left;
+    }
   }
 </style>
 

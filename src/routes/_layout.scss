@@ -31,5 +31,21 @@
 }
 
 :global(.section-title) {
-  @apply mb-4;
+  @apply text-center mb-4;
+
+  @screen sm {
+    @apply text-left;
+  }
+}
+
+:global(.icon) {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  overflow: visible;
+  fill: currentColor;
+}
+
+:global(.text-muted) {
+  @apply text-gray-600;
 }

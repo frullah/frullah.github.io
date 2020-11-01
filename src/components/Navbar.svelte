@@ -58,23 +58,41 @@
   }
 
   :global(.nav-items) {
-    @apply hidden mt-3;
+    @apply w-full hidden mt-3 flex-grow;
 
     @screen sm {
       @apply mt-0 block;
+    }
+
+    @screen lg {
+      @apply flex items-center w-auto;
     }
 
     &.show {
       @apply block;
     }
   }
+
+  :global(.nav-toggler) {
+    @apply flex items-center px-3 py-2 border rounded text-primary-400 border-primary-400;
+
+    &:hover {
+      @apply text-primary-700;
+    }
+  }
+
+  :global(.nav-item) {
+    @apply text-sm;
+
+    @screen sm {
+      @apply flex-grow;
+    }
+  }
 </style>
 
 <nav class="navbar" bind:offsetHeight={height}>
   <div class="block sm:hidden">
-    <button
-      class="flex items-center px-3 py-2 border rounded text-primary-400 border-primary-400 hover:text-primary-700"
-      on:click={handleNavButtonClick}>
+    <button class="nav-toggler" on:click={handleNavButtonClick}>
       <svg class="fill-current h-3 w-3" viewBox="0 0 20 20">
         <title>Menu</title>
         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -82,7 +100,7 @@
     </button>
   </div>
   <div
-    class="nav-items w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+    class="nav-items"
     class:show>
     <div class="text-sm sm:flex-grow">
       {#each links as link}

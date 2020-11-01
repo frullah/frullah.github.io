@@ -1,37 +1,40 @@
 <script>
-  import Icon from 'fa-svelte'
+  import Icon from './Icon.svelte'
   import tippy from 'sveltejs-tippy'
   import 'tippy.js/dist/svg-arrow.css'
 
   export let content
   export let href
-  export let icon
+  export let name
+
   const tippyProps = {
     placement: 'bottom',
-    interactive: true
+    interactive: true,
+    content: null
   }
 
   $: tippyProps.content = content
 </script>
 
-<style>
+<style lang="scss">
   :global(.contact-icon) {
     font-size: 34px;
-  }
 
-  :global(.fa-envelope) {
-    @apply text-red-600;
-  }
+    &.envelope {
+      @apply text-red-600;
+    }
 
-  :global(.fa-github-square) {
-    color: #333;
-  }
+    &.github-square {
+      color: #333;
+    }
+  
 
-  :global(.fa-whatsapp-square) {
-    color: #4fce5d;
+    &.whatsapp-square {
+      color: #4fce5d;
+    }
   }
 </style>
 
 <a {href} target="_blank" use:tippy={tippyProps}>
-  <Icon class="contact-icon fa-{icon.iconName}" {icon} />
+  <Icon class="contact-icon {name}" {name} />
 </a>

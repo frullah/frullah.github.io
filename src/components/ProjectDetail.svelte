@@ -1,10 +1,10 @@
 <script>
-  import Tag from './Tag.svelte'
+  import Tag from "./Tag.svelte";
 
-  export let project
+  export let project;
 
-  function setProjectToNull () {
-    project = null
+  function setProjectToNull() {
+    project = null;
   }
 </script>
 
@@ -43,7 +43,13 @@
               {/each}
             </ul>
           </div>
-          <div class="w-full md:w-6/12"></div>
+          <div class="w-full md:w-6/12 flex justify-center items-center">
+            {#each project.metadata.images as image, i}
+              <img src={image} alt="preview-{index}">
+            {:else}
+              <p class="text-muted text-center">No image available</p>
+            {/each}
+          </div>
         </div>
       </div>
     </div>

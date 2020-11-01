@@ -18,7 +18,6 @@
   <title>Fajarullah</title>
 </svelte:head>
 
-
 <main>
   <HomeSection />
   <SkillsSection />

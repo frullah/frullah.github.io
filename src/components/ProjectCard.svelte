@@ -1,6 +1,5 @@
 <script>
-  import { faCircle,  } from "@fortawesome/free-solid-svg-icons/faCircle";
-  import Icon from "fa-svelte";
+  import Icon from '@/components/Icon.svelte'
   import tippy from "sveltejs-tippy";
 
   const wipTippy = {
@@ -44,7 +43,7 @@
     <div
       class="wip"
       use:tippy={wipTippy}>
-      <Icon class="wip-icon" icon={faCircle} />
+      <Icon class="wip-icon" name='circle' />
     </div>
   {/if}
   <div class="text-center font-bold">{name}</div>
