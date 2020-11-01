@@ -15,9 +15,13 @@
 
 <style lang="scss">
   :global(.project-card) {
-    @apply w-1/2 p-2 cursor-pointer relative;
+    @apply w-full px-2 py-3 cursor-pointer relative;
 
     @screen sm {
+      @apply w-1/2;
+    }
+
+    @screen md {
       @apply w-1/3;
     }
 

@@ -14,7 +14,7 @@
 
 <style>
   :global(.project-list) {
-    @apply flex;
+    @apply flex flex-wrap;
   }
 </style>
 
