@@ -1,3 +1,3 @@
-# My github page
+# My Github Page
 
-made with svelte
+Made with Sapper, and Tailwind CSS.
