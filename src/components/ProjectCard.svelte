@@ -1,14 +1,15 @@
 <script>
-  import { faCircle } from "@fortawesome/free-solid-svg-icons";
+  import { faCircle } from "@fortawesome/free-solid-svg-icons/faCircle";
   import Icon from "fa-svelte";
   import tippy from "sveltejs-tippy";
 
-  const cirlceTippy = {
-    placement: 'right',
-    content: 'Work in progress'
-  }
+  const wipTippy = {
+    placement: "bottom",
+    content: "Work in progress",
+  };
 
   export let name;
+  export let done;
   export let slug;
 </script>
 
@@ -25,14 +26,22 @@
     }
   }
 
+  :global(.wip) {
+    @apply p-2 px-3 inline-block absolute right-0 top-0;
+  }
+
   :global(.wip-icon) {
     @apply text-orange-400 text-xs;
   }
 </style>
 
-<a class="project-card" href="projects/{slug}.json" on:click|preventDefault>
-  <div class="p-2 px-3 inline-block absolute right-0 top-0" use:tippy={cirlceTippy} >
-    <Icon class="wip-icon" icon={faCircle} />
-  </div>
+<a class="project-card" href='projects/{slug}.json' on:click|preventDefault>
+  {#if !done}
+    <div
+      class="wip"
+      use:tippy={wipTippy}>
+      <Icon class="wip-icon" icon={faCircle} />
+    </div>
+  {/if}
   <div class="text-center font-bold">{name}</div>
 </a>

@@ -27,6 +27,7 @@
           <ProjectCard
             name={project.metadata.name}
             slug={project.slug}
+            done={project.metadata.done}
             on:click={(_) => showProjectDetail(project.slug)} />
         {:else}
           <div class="text-center text-gray-600">no project yet</div>

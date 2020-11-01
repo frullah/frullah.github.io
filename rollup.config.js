@@ -19,8 +19,8 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD
 
 const onwarn = (warning, onwarn) =>
   (warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
-	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
-	onwarn(warning)
+  (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
+  onwarn(warning)
 
 const aliases = alias({
   resolve: ['.svelte', '.js'],
@@ -34,7 +34,7 @@ export default {
     input: config.client.input(),
     output: config.client.output(),
     plugins: [
-      aliases,
+      aliases,  
       markdown(),
       glob(),
       replace({

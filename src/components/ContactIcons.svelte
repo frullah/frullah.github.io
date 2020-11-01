@@ -1,5 +1,5 @@
 <script>
-  import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
+  import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons/faWhatsappSquare'
   import { faGithubSquare } from '@fortawesome/free-brands-svg-icons/faGithubSquare'
   import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope'
   import ContactIcon from '../components/ContactIcon.svelte'
