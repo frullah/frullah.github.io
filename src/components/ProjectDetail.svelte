@@ -45,7 +45,7 @@
           </div>
           <div class="w-full md:w-6/12 flex justify-center items-center">
             {#each project.metadata.images as image, i}
-              <img src={image} alt="preview-{index}">
+              <img src={image} alt="preview-{i}">
             {:else}
               <p class="text-muted text-center">No image available</p>
             {/each}
