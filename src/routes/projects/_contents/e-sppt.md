@@ -8,7 +8,7 @@ stacks:
   - PostgreSQL
   - Bootstrap
   - Oracle DB (Integration)
-thumbnail: null
+images: []
 ---
 
 e-SPPT adalah aplikasi berbasis web yang digunakan untuk mencetak SPPT online. memiliki QR Code untuk menandakan legalitas dokumen tersebut.
