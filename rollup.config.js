@@ -8,10 +8,11 @@ import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 import config from 'sapper/config/rollup.js'
 import pkg from './package.json'
-import { preprocess } from './svelte.config'
 import markdown from '@jackfranklin/rollup-plugin-markdown'
 import glob from 'rollup-plugin-glob'
 import alias from '@rollup/plugin-alias'
+
+const { preprocess } = require('./svelte.config')
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
