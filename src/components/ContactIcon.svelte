@@ -35,6 +35,6 @@
   }
 </style>
 
-<a {href} target="_blank" use:tippy={tippyProps}>
+<a {href} rel="noopener" target="_blank" use:tippy={tippyProps}>
   <Icon class="contact-icon {name}" {name} />
 </a>
