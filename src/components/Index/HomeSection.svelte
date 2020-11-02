@@ -1,7 +1,7 @@
 <script>
   import { ScrollableSection } from '@beyonk/svelte-scrollspy'
 
-  import ContactIcons from '../components/ContactIcons.svelte'
+  import ContactIcons from '../ContactIcons.svelte'
 </script>
 
 <ScrollableSection id="home">

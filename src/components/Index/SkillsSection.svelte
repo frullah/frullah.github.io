@@ -1,7 +1,7 @@
 <script>
   import { ScrollableSection } from '@beyonk/svelte-scrollspy'
 
-  import TagList from './TagList.svelte'
+  import TagList from '../TagList.svelte'
 
   const skills = [
     'HTML',
