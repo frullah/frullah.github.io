@@ -7,8 +7,7 @@
   export let project;
 
   async function showProjectDetail(slug) {
-    const response = await fetch(`projects/${slug}.json`);
-    project = await response.json();
+    project = fetch(`projects/${slug}.json`).then(res => res.json())
   }
 </script>
 
@@ -20,7 +19,7 @@
 
 <ScrollableSection id="projects">
   <div class="container">
-    <h2 class="section-title">Projects</h2>
+    <h1 class="section-title">Projects</h1>
     <div class="project-list">
       {#each projects as project}
         <ProjectCard
@@ -35,4 +34,4 @@
   </div>
 </ScrollableSection>
 
-<ProjectDetail {project} />
+<ProjectDetail projectLoader={project} />

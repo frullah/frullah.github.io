@@ -9,7 +9,6 @@
 <script>
   import HomeSection from "@/components/Index/HomeSection.svelte";
   import ProjectSection from "@/components/Index/ProjectSection.svelte";
-  import SkillsSection from "@/components/Index/SkillsSection.svelte";
 
   export let projects;
 </script>
@@ -20,6 +19,5 @@
 
 <main>
   <HomeSection />
-  <SkillsSection />
   <ProjectSection {projects} />
 </main>
