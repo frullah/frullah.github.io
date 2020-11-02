@@ -1,4 +1,5 @@
 <script>
+  import Icon from "./Icon.svelte";
   import Tag from "./Tag.svelte";
 
   export let project;
@@ -18,13 +19,18 @@
     <div
       class=" bg-white rounded-lg overflow-hidden shadow-xl transform transition-all md:max-w-5xl sm:w-full"
       role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-headline">
+      aria-modal="true">
       <div class="p-4 sm:p-6">
         <div class="modal-title flex items-center">
-          <h3 class="font-bold flex-grow" id="modal-headline">
-            {project.metadata.name}
-          </h3>
+          <div class="flex flex-grow items-center">
+            <h3 class="font-bold" id="modal-headline">
+              {project.metadata.name}
+            </h3>
+            {#if !project.metadata.done}
+              <Icon name="circle" class="wip-icon ml-2" />
+              <div class="ml-2 text-sm">[Work in progress]</div>
+            {/if}
+          </div>
           <button
             class="font-bold text-xl px-4 py-2"
             on:click={setProjectToNull}>×</button>
@@ -43,9 +49,10 @@
               {/each}
             </ul>
           </div>
-          <div class="w-full md:w-6/12 flex justify-center items-center">
+          <div
+            class="w-full md:w-6/12 flex justify-center items-center py-4 sm:py-0">
             {#each project.metadata.images as image, i}
-              <img src={image} alt="preview-{i}">
+              <img src={image} alt="preview-{i}" />
             {:else}
               <p class="text-muted text-center">No image available</p>
             {/each}
