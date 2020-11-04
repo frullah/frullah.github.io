@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "checkJs": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
