@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "module": "commonJS",
+    "target": "es6",
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
       ]
-    },
-    "checkJs": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
+    }
+  }
 }

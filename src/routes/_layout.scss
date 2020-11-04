@@ -1,3 +1,7 @@
+:global(.text-link:hover) {
+  @apply underline;
+}
+
 :global(body) {
   @apply text-gray-800;
 }
@@ -14,28 +18,27 @@
   @apply py-4;
 }
 
+%heading {
+  @apply mb-4;
+}
+
 :global(h1) {
-  @apply text-3xl;
+  @apply text-2xl;
+  @extend %heading;
 }
 
 :global(h2) {
-  @apply text-2xl;
+  @apply text-xl;
+  @extend %heading;
 }
 
 :global(h3) {
-  @apply text-xl;
-}
-
-:global(h4) {
   @apply text-lg;
+  @extend %heading;
 }
 
 :global(.section-title) {
-  @apply text-center mb-4;
-
-  @screen sm {
-    @apply text-left;
-  }
+  @apply text-center mb-4 font-bold;
 }
 
 :global(.icon) {

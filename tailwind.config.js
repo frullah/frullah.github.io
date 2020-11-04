@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        accent: colors.blue['600'],
         primary: colors.blue
       },
       screens: {
@@ -21,16 +22,16 @@ module.exports = {
         default: '1rem',
         sm: '1.5rem',
         lg: '2rem',
-        xl: '2.5rem',
+        xl: '2.5rem'
       },
       screens: {
         xl: '1024px'
       }
-    },
+    }
   },
   corePlugins: {
     animation: false
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }

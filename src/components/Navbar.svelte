@@ -11,10 +11,6 @@
       text: "Home",
     },
     {
-      id: "skills",
-      text: "Skills",
-    },
-    {
       id: "projects",
       text: "Projects",
     },

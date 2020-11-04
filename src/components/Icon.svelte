@@ -4,6 +4,6 @@
   export { klass as class };
 </script>
 
-<svg class="icon {klass}" role="img">
+<svg class="icon {klass}">
   <use xlink:href="#{name}" />
 </svg>
