@@ -1,5 +1,9 @@
-:global(.text-link:hover) {
-  @apply underline;
+:global(.text-link) {
+  @apply text-accent;
+
+  &:hover {
+    @apply underline;
+  }
 }
 
 :global(body) {

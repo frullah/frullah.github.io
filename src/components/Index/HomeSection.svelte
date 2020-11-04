@@ -9,7 +9,7 @@
   :global(.bio-title) {
     @apply mb-4;
   }
-  
+
   :global(.bio-description) {
     margin: theme("margin.4") auto;
     max-width: 580px;
@@ -21,14 +21,13 @@
     <h1 class="bio-title">Hi, I'm <strong>Fajarullah</strong></h1>
     <p class="bio-description">
       I'm a Software Developer, I love to code for Web Development. I often use
+      <a class="text-link" href="https://www.ruby-lang.org">Ruby</a>, and
       <a
-        class="text-accent text-link"
-        href="https://www.ruby-lang.org">Ruby</a>, and
-      <a
-        class="text-accent text-link"
+        class="text-link"
         href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a>
-      as my programming languages. When I have free time, I enjoy game, watching
-      animes, and learning languages.
+      as my programming languages. When I have free time, I play
+      <a class="text-link" href="https://osu.ppy.sh/users/5132441">osu!</a>,
+      watching animes, and learning languages.
     </p>
 
     <SocialLinks />
