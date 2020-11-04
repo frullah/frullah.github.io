@@ -85,7 +85,7 @@
   }
 </style>
 
-<nav class="navbar" bind:offsetHeight={height}>
+<header class="navbar" bind:offsetHeight={height}>
   <div class="block sm:hidden">
     <button class="nav-toggler" on:click={handleNavButtonClick}>
       <svg class="fill-current h-3 w-3" viewBox="0 0 20 20">
@@ -94,7 +94,7 @@
       </svg>
     </button>
   </div>
-  <div
+  <nav
     class="nav-items"
     class:show>
     <div class="text-sm sm:flex-grow">
@@ -107,5 +107,5 @@
         </SectionHeader>
       {/each}
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
