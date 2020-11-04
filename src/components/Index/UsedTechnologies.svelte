@@ -22,7 +22,9 @@
 
 <style lang="scss">
   :global(.skill-list) {
-    @apply max-w-lg text-center mx-auto;
+    @apply text-center;
+    margin: 0 auto;
+    max-width: 580px;
   }
 </style>
 

@@ -18,23 +18,16 @@
   @apply py-4;
 }
 
-%heading {
-  @apply mb-4;
-}
-
 :global(h1) {
   @apply text-2xl;
-  @extend %heading;
 }
 
 :global(h2) {
   @apply text-xl;
-  @extend %heading;
 }
 
 :global(h3) {
   @apply text-lg;
-  @extend %heading;
 }
 
 :global(.section-title) {

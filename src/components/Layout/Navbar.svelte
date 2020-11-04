@@ -1,8 +1,7 @@
 <script>
-  import { SectionHeader, ScrollableSection } from "@beyonk/svelte-scrollspy";
+  import { SectionHeader } from "@beyonk/svelte-scrollspy";
   import { scrollto } from "svelte-scrollto";
 
-  let navbar;
   export let height;
   let show = false;
   const links = [

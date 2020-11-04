@@ -1,19 +1,23 @@
 <script>
   import { ScrollableSection } from "@beyonk/svelte-scrollspy";
 
-  import SocialIcons from "../SocialIcons.svelte";
+  import SocialLinks from "../SocialLinks.svelte";
   import UsedTechnologies from "./UsedTechnologies.svelte";
 </script>
 
 <style lang="scss">
+  :global(.bio-title) {
+    @apply mb-4;
+  }
+  
   :global(.bio-description) {
-    margin: 0 auto theme("margin.4");
+    margin: theme("margin.4") auto;
     max-width: 580px;
   }
 </style>
 
 <ScrollableSection id="home">
-  <div class="container text-center mt-4">
+  <div class="container text-center">
     <h1 class="bio-title">Hi, I'm <strong>Fajarullah</strong></h1>
     <p class="bio-description">
       I'm a Software Developer, I love to code for Web Development. I often use
@@ -27,7 +31,7 @@
       animes, and learning languages.
     </p>
 
-    <SocialIcons />
+    <SocialLinks />
   </div>
   <UsedTechnologies />
 </ScrollableSection>

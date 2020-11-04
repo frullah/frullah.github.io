@@ -2,9 +2,9 @@
   import * as animateScroll from "svelte-scrollto";
   import { cubicOut } from "svelte/easing";
   import { ScrollSpy } from "@beyonk/svelte-scrollspy";
-  import Navbar from "../components/Navbar.svelte";
+  import Navbar from "@/components/Layout/Navbar.svelte";
   import { onMount } from "svelte";
-  import InlineSvg from "../components/InlineSvg.svelte";
+  import InlineSvg from "@/components/Layout/InlineSvg.svelte";
 
   let navbarHeight;
 
