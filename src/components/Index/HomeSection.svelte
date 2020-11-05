@@ -27,7 +27,7 @@
         href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a>
       as my programming languages. When I have free time, I play
       <a class="text-link" href="https://osu.ppy.sh/users/5132441">osu!</a>,
-      watching animes, and learning languages.
+      watching animes, or learning languages.
     </p>
 
     <SocialLinks />
