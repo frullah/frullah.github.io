@@ -11,10 +11,10 @@
 }
 
 :global(section) {
-  @apply py-2;
+  padding: theme('padding.2') 0;
 
   @screen md {
-    @apply py-4;
+    padding: theme('padding.4') 0;
   }
 }
 

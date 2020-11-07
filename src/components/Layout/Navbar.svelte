@@ -26,14 +26,13 @@
     items-center
     justify-between
     flex-wrap
-    py-2
-    px-4
     sticky
     top-0
     bg-white
     w-full
     border-gray-400
     border-b-2;
+    padding: theme('padding.4') theme('padding.2');
   }
 
   :global(.active > .nav-item) {
@@ -69,7 +68,8 @@
   }
 
   :global(.nav-toggler) {
-    @apply flex items-center px-3 py-2 border rounded text-primary-400 border-primary-400;
+    @apply flex items-center border rounded text-primary-400 border-primary-400;
+    padding: theme('padding.2') theme('padding.3');
 
     &:hover {
       @apply text-primary-700;

@@ -14,7 +14,8 @@
 
 <style lang="scss">
   :global(.project-card) {
-    @apply w-full px-2 py-3 cursor-pointer relative;
+    @apply w-full cursor-pointer relative;
+    padding: theme('padding.3') theme('padding.2');
 
     @screen sm {
       @apply w-1/2;
@@ -30,7 +31,8 @@
   }
 
   :global(.wip) {
-    @apply p-2 px-3 inline-block absolute right-0 top-0;
+    @apply inline-block absolute right-0 top-0;
+    padding: theme('padding.3') theme('padding.2');
   }
 
   :global(.wip-icon) {

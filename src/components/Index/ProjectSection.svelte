@@ -7,7 +7,7 @@
   export let project;
 
   async function showProjectDetail(slug) {
-    project = fetch(`projects/${slug}.json`).then(res => res.json())
+    project = fetch(`projects/${slug}.json`).then((res) => res.json());
   }
 </script>
 
@@ -21,12 +21,12 @@
   <div class="container">
     <h1 class="section-title">Projects</h1>
     <div class="project-list">
-      {#each projects as project}
+      {#each projects as { metadata, slug }}
         <ProjectCard
-          name={project.metadata.name}
-          slug={project.slug}
-          done={project.metadata.done}
-          on:click={(_) => showProjectDetail(project.slug)} />
+          name={metadata.name}
+          {slug}
+          done={metadata.done}
+          on:click={(_) => showProjectDetail(slug)} />
       {:else}
         <div class="text-center text-muted">no project yet</div>
       {/each}
