@@ -19,7 +19,10 @@ jobs:
       with:
         node-version: 14.x
     - uses: pnpm/action-setup@v1.2.1
-    - run: pnpm i --frozen-lockfile	
+      with:
+        version: 4.11.1
+        run_install: |
+          - args: [--frozen-lockfile]
     - run: pnpm run export
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
