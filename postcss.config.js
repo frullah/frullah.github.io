@@ -18,13 +18,6 @@ if (process.env.NODE_ENV === 'production') {
   plugins.push(cssnano)
 }
 
-plugins.push(
-  require('postcss-rename')({
-    prefix: 'fajar',
-    strategy: 'minimal'
-  })
-)
-
 module.exports = {
   syntax: 'postcss-scss',
   plugins
