@@ -19,6 +19,7 @@ devDependencies:
   '@rollup/plugin-node-resolve': 10.0.0_rollup@2.33.1
   '@rollup/plugin-replace': 2.3.4_rollup@2.33.1
   '@rollup/plugin-url': 5.0.1_rollup@2.33.1
+  '@skeleton-elements/svelte': 2.0.0
   cssnano: 4.1.10
   eslint: 7.13.0
   eslint-config-standard: 15.0.1_65f8612ec648d6e0280ad4fc9127d3c3
@@ -1152,6 +1153,10 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
+  /@skeleton-elements/svelte/2.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-l8C3HIa7QocPsXo1WO0Qjr+/nknrmp+PPOTUe3/hHbSduz321uG6hFxVZRiM3G6Qee57vW4CVpdHL/Ix+bJjhw==
   /@types/estree/0.0.39:
     dev: true
     resolution:
@@ -5031,6 +5036,7 @@ specifiers:
   '@rollup/plugin-node-resolve': ^10.0.0
   '@rollup/plugin-replace': ^2.2.0
   '@rollup/plugin-url': ^5.0.0
+  '@skeleton-elements/svelte': ^2.0.0
   compression: ^1.7.1
   cssnano: ^4.1.10
   eslint: ^7.12.1
