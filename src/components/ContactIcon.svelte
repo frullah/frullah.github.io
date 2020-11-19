@@ -16,8 +16,8 @@
   $: tippyProps.content = content
 </script>
 
-<style lang="scss">
-  :global(.contact-icon) {
+<style global>
+  .contact-icon {
     font-size: 34px;
 
     &.envelope {
@@ -28,7 +28,6 @@
       color: #333;
     }
   
-
     &.whatsapp-square {
       color: #4fce5d;
     }

@@ -15,8 +15,8 @@
   }
 </script>
 
-<style lang="scss">
-  :global(.project-images) {
+<style global>
+  .project-images {
     @apply w-full flex justify-center items-center
       sm:py-0
       md:w-6/12;
@@ -24,7 +24,7 @@
     padding: theme('padding.4') 0;
   }
 
-  :global(.project-description) {
+  .project-description {
     @apply w-full;
 
     margin: theme('margin.4') 0;

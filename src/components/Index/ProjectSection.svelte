@@ -11,8 +11,8 @@
   }
 </script>
 
-<style>
-  :global(.project-list) {
+<style global>
+  .project-list {
     @apply flex flex-wrap;
   }
 </style>

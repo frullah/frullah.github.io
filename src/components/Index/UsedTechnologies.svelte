@@ -20,8 +20,8 @@
   ];
 </script>
 
-<style lang="scss">
-  :global(.tech-stack) {
+<style global>
+  .tech-stack {
     @apply text-center;
     margin: 0 auto;
     max-width: 580px;

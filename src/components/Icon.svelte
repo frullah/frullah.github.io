@@ -1,9 +1,7 @@
 <script>
-  let klass = "";
-  export let name;
-  export { klass as class };
+  export let name
 </script>
 
-<svg class="icon {klass}">
+<svg class="icon {$$props.class}">
   <use xlink:href="#{name}" />
 </svg>

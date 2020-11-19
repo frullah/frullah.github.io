@@ -4,8 +4,8 @@
   export let tags
 </script>
 
-<style>
-  :global(.tag-list > li) {
+<style global>
+  .tag-list > li {
     @apply inline-block m-1;
   }
 </style>

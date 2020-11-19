@@ -20,8 +20,8 @@
   }
 </script>
 
-<style lang="scss">
-  :global(.navbar) {
+<style global>
+  .navbar {
     @apply flex
     items-center
     justify-between
@@ -30,17 +30,17 @@
     top-0
     bg-white
     w-full
-    border-gray-400
+    border-gray-300
     border-b-2;
 
     padding: theme('padding.2');
   }
 
-  :global(.active > .nav-item) {
+  .active > .nav-item {
     @apply text-accent;
   }
 
-  :global(.nav-item) {
+  .nav-item {
     @apply
       block
       p-2
@@ -49,7 +49,7 @@
       hover:text-accent;
   }
 
-  :global(.nav-items) {
+  .nav-items {
     @apply
       w-full
       hidden
@@ -66,8 +66,13 @@
     }
   }
 
-  :global(.nav-toggler) {
-    @apply flex items-center border-0 outline-none justify-center
+  .nav-toggler {
+    @apply
+      flex
+      items-center
+      border-0
+      outline-none
+      justify-center
       hover:text-accent
       sm:hidden;
 
@@ -75,7 +80,7 @@
     width: 40px;
   }
 
-  :global(.nav-item) {
+  .nav-item {
     @apply text-sm sm:flex-grow;
   }
 </style>

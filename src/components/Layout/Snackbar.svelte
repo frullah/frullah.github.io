@@ -1,12 +1,12 @@
 <script>
-  	import { onDestroy } from 'svelte';
-  import { fly } from "svelte/transition";
+  import { onDestroy } from 'svelte'
+  import { fly } from 'svelte/transition'
 
-  import { snackbarText } from "../../store";
-  setTimeout(() => (snackbarText.value = "asasa"), 500)
-  
+  import { snackbarText } from '../../store'
+  setTimeout(() => (snackbarText.value = 'asasa'), 500)
+
   const timeout = 1
-  export let visible = false
+  let visible = false
   let timerId
 
   $: if (snackbarText.value) {
@@ -21,11 +21,11 @@
   onDestroy(() => {
     clearTimeout(timerId)
     timerId = undefined
-  });
+  })
 </script>
 
-<style>
-  :global(.snackbar) {
+<style global>
+  .snackbar {
     @apply fixed bottom-4 left-4 bg-gray-700 text-white;
     padding: theme("padding.3");
   }

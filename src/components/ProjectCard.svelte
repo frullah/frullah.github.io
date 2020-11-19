@@ -12,8 +12,8 @@
   export let slug;
 </script>
 
-<style lang="scss">
-  :global(.project-card) {
+<style global>
+  .project-card {
     @apply
       w-full
       cursor-pointer
@@ -24,12 +24,12 @@
     padding: theme('padding.3')
   }
 
-  :global(.wip) {
+  .wip {
     @apply inline-block absolute right-0 top-0;
     padding: theme('padding.3');
   }
 
-  :global(.wip-icon) {
+  .wip-icon {
     @apply text-orange-400 text-xs;
   }
 </style>

@@ -5,12 +5,12 @@
   import UsedTechnologies from "./UsedTechnologies.svelte";
 </script>
 
-<style lang="scss">
-  :global(.bio-title) {
+<style global>
+  .bio-title {
     @apply mb-4;
   }
 
-  :global(.bio-description) {
+  .bio-description {
     margin: theme("margin.4") auto;
     max-width: 580px;
   }
