@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "module": "commonJS",
-    "target": "es6",
-    "baseUrl": ".",
+    "target": "esnext",
+    "baseUrl": "./src",
     "paths": {
       "@/*": [
-        "./src/*"
+        "./*"
       ]
     }
-  }
+  },
+  "include": ["src/**/*"]
 }
