@@ -53,6 +53,7 @@
     "postcss": "^8.1.7",
     "postcss-cli": "^8.3.0",
     "postcss-import": "^13.0.0",
+    "postcss-nested": "^5.0.1",
     "rollup": "^2.33.3",
     "rollup-plugin-glob": "^1.0.2",
     "rollup-plugin-svelte": "^6.1.1",
