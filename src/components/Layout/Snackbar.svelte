@@ -3,9 +3,8 @@
   import { fly } from 'svelte/transition'
 
   import { snackbarText } from '../../store'
-  setTimeout(() => (snackbarText.value = 'asasa'), 500)
 
-  const timeout = 1
+  const timeoutMs = 5000
   let visible = false
   let timerId
 
@@ -14,13 +13,12 @@
     clearTimeout(timerId)
     timerId = setTimeout(() => {
       visible = false
-      timerId = undefined
-    }, timeout * 1000)
+      clearTimeout(timerId)
+    }, timeoutMs)
   }
 
   onDestroy(() => {
     clearTimeout(timerId)
-    timerId = undefined
   })
 </script>
 
@@ -34,8 +32,8 @@
 {#if visible}
   <div
     class="snackbar"
-    in:fly={{ y: 48, duration: 250 }}
-    out:fly={{ y: 48, duration: 250 }}>
+    in:fly={{ y: 48, duration: 350 }}
+    out:fly={{ y: 48, duration: 350 }}>
     {snackbarText.value}
   </div>
 {/if}
