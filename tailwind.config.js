@@ -5,7 +5,10 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: [
+    './src/components/**/*.svelte',
+    './src/routes/**/*.svelte'
+  ],
   theme: {
     extend: {
       colors: {
