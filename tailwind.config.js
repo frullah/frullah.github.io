@@ -10,12 +10,15 @@ module.exports = {
     './src/routes/**/*.svelte'
   ],
   theme: {
+    colors: {
+      accent: colors.blue['600'],
+      primary: colors.blue,
+      orange: colors.orange,
+      gray: colors.gray,
+      white: colors.white,
+      red: colors.red,
+    },
     extend: {
-      colors: {
-        accent: colors.blue['600'],
-        primary: colors.blue,
-        orange: colors.orange
-      },
       screens: {
         sm: '600px'
       }
