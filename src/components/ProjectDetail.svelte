@@ -17,19 +17,16 @@
 
 <style lang="scss">
   :global(.project-images) {
-    @apply w-full flex justify-center items-center;
+    @apply w-full flex justify-center items-center
+      sm:py-0
+      md:w-6/12;
+
     padding: theme('padding.4') 0;
-
-    @screen sm {
-      @apply py-0;
-    }
-
-    @screen md {
-      @apply w-6/12;
-    }
   }
 
   :global(.project-description) {
+    @apply w-full;
+
     margin: theme('margin.4') 0;
   }
 </style>
@@ -77,7 +74,7 @@
           <h3 class="font-bold" id="modal-headline">{project.metadata.name}</h3>
           {#if !project.metadata.done}
             <Icon name="circle" class="wip-icon mx-2" />
-            <div class="text-sm">[Work in progress]</div>
+            <div class="hidden sm:block text-sm">(Work in progress)</div>
           {/if}
         </div>
         <button class="w-12 h-10" on:click={setProjectToNull}>

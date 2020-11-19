@@ -4,7 +4,7 @@
 
   export let height;
   let show = false;
-  const links = [
+  const sections = [
     {
       id: "home",
       text: "Home",
@@ -15,7 +15,7 @@
     },
   ];
 
-  function handleNavButtonClick(node) {
+  function handleNavButtonClick() {
     show = !show;
   }
 </script>
@@ -32,35 +32,34 @@
     w-full
     border-gray-400
     border-b-2;
-    padding: theme('padding.4') theme('padding.2');
+
+    padding: theme('padding.2');
   }
 
   :global(.active > .nav-item) {
-    @apply text-primary-600;
+    @apply text-accent;
   }
 
   :global(.nav-item) {
-    @apply block p-2;
-
-    @screen sm {
-      @apply inline-block mt-0;
-    }
-
-    &:hover {
-      @apply text-primary-600;
-    }
+    @apply
+      block
+      p-2
+      sm:inline-block
+      sm:mt-0
+      hover:text-accent;
   }
 
   :global(.nav-items) {
-    @apply w-full hidden mt-3 flex-grow;
-
-    @screen sm {
-      @apply mt-0 block;
-    }
-
-    @screen lg {
-      @apply flex items-center w-auto;
-    }
+    @apply
+      w-full
+      hidden
+      mt-3
+      flex-grow
+      sm:mt-0
+      sm:block
+      lg:flex
+      lg:items-center
+      lg:w-auto;
 
     &.show {
       @apply block;
@@ -68,37 +67,28 @@
   }
 
   :global(.nav-toggler) {
-    @apply flex items-center border rounded text-primary-400 border-primary-400;
-    padding: theme('padding.2') theme('padding.3');
+    @apply flex items-center border-0 outline-none justify-center
+      hover:text-accent
+      sm:hidden;
 
-    &:hover {
-      @apply text-primary-700;
-    }
+    height: 40px;
+    width: 40px;
   }
 
   :global(.nav-item) {
-    @apply text-sm;
-
-    @screen sm {
-      @apply flex-grow;
-    }
+    @apply text-sm sm:flex-grow;
   }
 </style>
 
 <header class="navbar" bind:offsetHeight={height}>
-  <div class="block sm:hidden">
-    <button class="nav-toggler" on:click={handleNavButtonClick}>
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-      </svg>
-    </button>
-  </div>
-  <nav
-    class="nav-items"
-    class:show>
+  <button class="nav-toggler" on:click={handleNavButtonClick}>
+    <svg class="fill-current h-5 w-5" viewBox="0 0 20 20">
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+    </svg>
+  </button>
+  <nav class="nav-items" class:show>
     <div class="text-sm sm:flex-grow">
-      {#each links as link}
+      {#each sections as link}
         <SectionHeader id={link.id}>
           <a
             use:scrollto={`#${link.id}`}

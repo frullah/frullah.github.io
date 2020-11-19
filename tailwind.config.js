@@ -1,4 +1,4 @@
-const { colors, padding } = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   future: {
@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       colors: {
         accent: colors.blue['600'],
-        primary: colors.blue
+        primary: colors.blue,
+        orange: colors.orange
       },
       screens: {
         sm: '600px'

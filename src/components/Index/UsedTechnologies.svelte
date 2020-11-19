@@ -21,7 +21,7 @@
 </script>
 
 <style lang="scss">
-  :global(.skill-list) {
+  :global(.tech-stack) {
     @apply text-center;
     margin: 0 auto;
     max-width: 580px;
@@ -30,5 +30,5 @@
 
 <div class="container">
   <h2 class="section-title">Technologies I use</h2>
-  <TagList tags={skills} class="skill-list" />
+  <TagList aria-label="used-technologies" tags={skills} class="tech-stack" />
 </div>

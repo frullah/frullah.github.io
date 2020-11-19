@@ -1,9 +1,7 @@
 <script>
   import Tag from './Tag.svelte'
 
-  let klass
   export let tags
-  export { klass as class }
 </script>
 
 <style>
@@ -12,7 +10,7 @@
   }
 </style>
 
-<ul class="tag-list {klass}">
+<ul class="tag-list {$$props.class}" aria-label={$$props['aria-label']}>
   {#each tags as tag}
     <li>
       <Tag text={tag} />

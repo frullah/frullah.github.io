@@ -4,29 +4,23 @@
   const links = [
     {
       href: "mailto:frullah12@gmail.com",
-      name: 'envelope',
+      name: "envelope",
       content: "frullah12@gmail.com",
     },
     {
       href: "https://web.whatsapp.com/send?phone=+6285939936593",
-      name: 'whatsapp-square',
+      name: "whatsapp-square",
       content: "+62-859-3993-6593",
     },
     {
       href: "https://github.com/frullah",
-      name: 'github-square',
+      name: "github-square",
       content: "@frullah",
     },
   ];
 </script>
 
-<style>
-  :global(.contact-icon-list > li) {
-    @apply inline-block m-1;
-  }
-</style>
-
-<ul class="contact-icon-list">
+<ul aria-label="contacts" class="tag-list">
   {#each links as link (link.name)}
     <li>
       <ContactIcon {...link} />

@@ -12,15 +12,9 @@
   }
 
   :global(.modal) {
-    @apply bg-white rounded-lg overflow-hidden shadow-xl transform transition-all;
-
-    @screen sm {
-      @apply w-full;
-    }
-
-    @screen md {
-      @apply max-w-5xl;
-    }
+    @apply bg-white rounded-lg overflow-hidden shadow-xl transform transition-all
+      sm:w-full
+      md:max-w-5xl;
   }
 
   :global(.modal-title) {
@@ -29,7 +23,7 @@
   }
 
   :global(.modal-body) {
-    @apply flex items-center;
+    @apply flex flex-wrap items-center;
     padding: theme("padding.4");
   }
 </style>

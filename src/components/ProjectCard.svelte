@@ -14,25 +14,19 @@
 
 <style lang="scss">
   :global(.project-card) {
-    @apply w-full cursor-pointer relative;
-    padding: theme('padding.3') theme('padding.2');
-
-    @screen sm {
-      @apply w-1/2;
-    }
-
-    @screen md {
-      @apply w-1/3;
-    }
-
-    &:hover {
-      @apply bg-primary-200;
-    }
+    @apply
+      w-full
+      cursor-pointer
+      relative
+    hover:bg-primary-200
+      sm:w-1/2
+      md:w-1/2;
+    padding: theme('padding.3')
   }
 
   :global(.wip) {
     @apply inline-block absolute right-0 top-0;
-    padding: theme('padding.3') theme('padding.2');
+    padding: theme('padding.3');
   }
 
   :global(.wip-icon) {
