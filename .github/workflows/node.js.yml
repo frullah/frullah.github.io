@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  PNPM_STORE_DIR: node_modules/.pnpm-store
+  CI: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,12 +22,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
-    - uses: pnpm/action-setup@v1.2.1
+    - name: always-upload-cache
+      uses: pat-s/always-upload-cache@v2.1.3
       with:
-        version: 4.11.1
-        run_install: |
-          - args: [--frozen-lockfile]
-    - run: pnpm run export
+        path: ${{ env.PNPM_STORE_DIR }}
+        key:  -dependency-
+    - name: Install dependency
+      run: |
+        npm config set store-dir ${{ env.PNPM_STORE_DIR }}
+        npm install -g pnpm
+        pnpm install
+    - name: Generate static site
+      run: pnpm run export
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
