@@ -10,7 +10,6 @@ devDependencies:
   '@babel/plugin-transform-runtime': 7.12.1_@babel+core@7.12.3
   '@babel/preset-env': 7.12.1_@babel+core@7.12.3
   '@babel/runtime': 7.12.5
-  '@beyonk/svelte-scrollspy': 2.1.2
   '@fullhuman/postcss-purgecss': 3.0.0
   '@jackfranklin/rollup-plugin-markdown': 0.2.0
   '@rollup/plugin-alias': 3.1.1_rollup@2.33.3
@@ -41,7 +40,6 @@ devDependencies:
   sapper: 0.28.10_svelte@3.29.7
   svelte: 3.29.7
   svelte-preprocess: 4.6.0_a16eebecb89d7f26022ecd7752076c71
-  svelte-scrollto: 0.2.0
   sveltejs-tippy: 3.0.0
 lockfileVersion: 5.2
 packages:
@@ -984,12 +982,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-hwyjw6GvjBLiyy3W0YQf0Z5Zf4NpYejUnKFcfcUhZCSffoBBp30w6wP2Wn6pk31jMYZvcOrB/1b7cGXvEoKogA==
-  /@beyonk/svelte-scrollspy/2.1.2:
-    dependencies:
-      intersection-observer: 0.7.0
-    dev: true
-    resolution:
-      integrity: sha512-B/c4KqmBoc130AScB9CoMvMHGoGAVVHCbkm0ppGYCayhygHQCMSJPa+ck233QP25lvhP6qjsut73KiWD6QSDeQ==
   /@eslint/eslintrc/0.2.1:
     dependencies:
       ajv: 6.12.6
@@ -2632,10 +2624,6 @@ packages:
   /inherits/2.0.4:
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /intersection-observer/0.7.0:
-    dev: true
-    resolution:
-      integrity: sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg==
   /is-absolute-url/2.1.0:
     dev: true
     engines:
@@ -4504,12 +4492,6 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-kJwcU71+yw3KKMgGu9eHZMJVBSkW4VfGJ5LSMgFQP/XcwvY2QUV6JcyBoQTjJm+h1KRlo/WGDo6A7+7e+B8B4A==
-  /svelte-scrollto/0.2.0:
-    dependencies:
-      svelte: 3.29.7
-    dev: true
-    resolution:
-      integrity: sha512-l4K2E4jr6dXCODtZDCkpp/TzknVVoq8gecHM0UOOmihvLosczdyLuyDUhZ+U2HkhLWi7nnimuOstZSFKtXSpmA==
   /svelte/3.29.7:
     dev: true
     engines:
@@ -4895,7 +4877,6 @@ specifiers:
   '@babel/plugin-transform-runtime': ^7.12.1
   '@babel/preset-env': ^7.12.1
   '@babel/runtime': ^7.12.5
-  '@beyonk/svelte-scrollspy': ^2.1.2
   '@fullhuman/postcss-purgecss': ^3.0.0
   '@jackfranklin/rollup-plugin-markdown': ^0.2.0
   '@rollup/plugin-alias': ^3.1.1
@@ -4929,7 +4910,6 @@ specifiers:
   sirv: ^1.0.7
   svelte: ^3.29.7
   svelte-preprocess: ^4.6.0
-  svelte-scrollto: ^0.2.0
   sveltejs-tippy: ^3.0.0
   tailwindcss: ^2.0.1
   tippy.js: ^6.2.7

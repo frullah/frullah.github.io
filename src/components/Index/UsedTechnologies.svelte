@@ -22,13 +22,12 @@
 
 <style global>
   .tech-stack {
-    @apply text-center;
     margin: 0 auto;
     max-width: 580px;
   }
 </style>
 
-<div class="container">
+<section aria-label="used-technologies" class="container">
   <h2 class="section-title">Technologies I use</h2>
-  <TagList aria-label="used-technologies" tags={skills} class="tech-stack" />
-</div>
+  <TagList aria-label="tech-stack" tags={skills} class="tech-stack" />
+</section>

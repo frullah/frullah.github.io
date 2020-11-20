@@ -7,11 +7,21 @@
   import TagList from "./TagList.svelte";
   import { SkeletonText, SkeletonImage } from "@skeleton-elements/svelte";
   import Modal from "./Modal.svelte";
+  import { snackbarText } from "@/store.js";
 
   export let projectLoader;
 
   function setProjectToNull() {
     projectLoader = null;
+  }
+
+  $: if (projectLoader) {
+    projectLoader.catch(() => {
+      console.log(12121);
+      if (projectLoader) {
+        snackbarText.value = "Failed to load project detail"
+      }
+    })
   }
 </script>
 

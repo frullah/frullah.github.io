@@ -1,25 +1,26 @@
 <script>
+  import { snackbarText } from '@/store.js';
+
   import { onDestroy } from 'svelte'
   import { fly } from 'svelte/transition'
 
-  import { snackbarText } from '../../store'
 
   const timeoutMs = 5000
   let visible = false
-  let timerId
+  let timer
+
+  const clearTimer = () => clearTimeout(timer)
 
   $: if (snackbarText.value) {
     visible = true
-    clearTimeout(timerId)
-    timerId = setTimeout(() => {
+    clearTimer()
+    timer = setTimeout(() => {
       visible = false
-      clearTimeout(timerId)
+      clearTimer()
     }, timeoutMs)
   }
 
-  onDestroy(() => {
-    clearTimeout(timerId)
-  })
+  onDestroy(clearTimer)
 </script>
 
 <style global>
