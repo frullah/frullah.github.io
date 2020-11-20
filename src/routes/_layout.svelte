@@ -1,12 +1,13 @@
 <script>
-  import * as animateScroll from 'svelte-scrollto'
+  import { onMount } from 'svelte'
   import { cubicOut } from 'svelte/easing'
+  import * as animateScroll from 'svelte-scrollto'
   import { ScrollSpy } from '@beyonk/svelte-scrollspy'
   import Navbar from '@/components/Layout/Navbar.svelte'
-  import { onMount } from 'svelte'
   import InlineSvg from '@/components/Layout/InlineSvg.svelte'
-  import Snackbar from '@/components/Layout/Snackbar.svelte'
+  import GlobalSnackbar from '@/components/GlobalSnackbar.svelte'
 
+  
   let navbarHeight
 
   onMount(() => {
@@ -18,9 +19,9 @@
   })
 </script>
 
-<style global lang="postcss" src="./_layout.pcss"></style>
+<style global src="./_layout.pcss"></style>
 
-<Snackbar />
+<GlobalSnackbar />
 <InlineSvg />
 
 <ScrollSpy>
