@@ -2,12 +2,12 @@
   "compilerOptions": {
     "module": "commonJS",
     "target": "esnext",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./*"
+        "src/*"
       ]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["./src"]
 }
