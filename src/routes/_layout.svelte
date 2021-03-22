@@ -6,7 +6,7 @@
   import GlobalSnackbar from "@/components/GlobalSnackbar.svelte";
 </script>
 
-<style global src="./_layout.pcss">
+<style global src="./_layout.scss" lang="scss">
 </style>
 
 <GlobalSnackbar />

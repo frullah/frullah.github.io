@@ -25,7 +25,7 @@
   }
 </script>
 
-<style global>
+<style global lang="scss">
   .project-images {
     @apply w-full flex justify-center items-center
       sm:py-0

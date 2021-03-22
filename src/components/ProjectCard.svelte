@@ -5,7 +5,7 @@
   export let done;
 </script>
 
-<style global>
+<style global lang="scss">
   .project-card {
     @apply w-full relative border border-gray-300 my-2;
   }

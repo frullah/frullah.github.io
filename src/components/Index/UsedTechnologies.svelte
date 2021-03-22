@@ -20,7 +20,7 @@
   ];
 </script>
 
-<style global>
+<style global lang="scss">
   .tech-stack {
     margin: 0 auto;
     max-width: 580px;

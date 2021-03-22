@@ -2,7 +2,7 @@
   export let backdropClickHandler;
 </script>
 
-<style global>
+<style global lang="scss">
   .backdrop {
     @apply fixed inset-0 transition-opacity bg-gray-700 opacity-50;
   }

@@ -4,7 +4,7 @@
   export let tags
 </script>
 
-<style global>
+<style global lang="scss">
   .tag-list > li {
     @apply inline-block m-1;
   }

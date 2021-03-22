@@ -13,7 +13,7 @@ import { pageTransitionIn, pageTransitionOut } from "@/transition.js";
   export let projects;
 </script>
 
-<style global>
+<style global lang="scss">
   .project-list {
     @apply flex flex-wrap;
   }

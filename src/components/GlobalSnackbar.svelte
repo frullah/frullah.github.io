@@ -23,7 +23,7 @@
   onDestroy(clearTimer)
 </script>
 
-<style global>
+<style global lang="scss">
   .snackbar {
     @apply fixed bottom-4 left-4 bg-gray-700 text-white;
     padding: theme("padding.3");

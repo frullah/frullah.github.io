@@ -18,7 +18,7 @@
   }
 </script>
 
-<style global>
+<style global lang="scss">
   .navbar {
     @apply flex
     items-center

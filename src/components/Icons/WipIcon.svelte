@@ -8,7 +8,7 @@
   };
 </script>
 
-<style global>
+<style global lang="scss">
   .wip {
     @apply inline-block;
     padding: theme("padding.3");

@@ -1,5 +1,4 @@
 const plugins = [
-  require('postcss-nested')({ bubble: ['screen'] }),
   require('tailwindcss')('./tailwind.config.js'),
   require('autoprefixer')
 ]

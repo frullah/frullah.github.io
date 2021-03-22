@@ -16,7 +16,7 @@
   $: tippyProps.content = content
 </script>
 
-<style global>
+<style global lang="scss">
   .contact-icon {
     font-size: 34px;
 

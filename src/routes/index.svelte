@@ -5,7 +5,7 @@
   import { pageTransitionIn, pageTransitionOut } from "@/transition.js";
 </script>
 
-<style global>
+<style global lang="scss">
   .bio-title {
     @apply mb-4;
   }
