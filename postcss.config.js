@@ -1,5 +1,5 @@
 const plugins = [
-  require('tailwindcss')('./tailwind.config.js'),
+  require('@tailwindcss/jit'),
   require('autoprefixer')
 ]
 
