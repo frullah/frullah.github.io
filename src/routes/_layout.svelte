@@ -1,4 +1,5 @@
 <script>
+	import InlineSvg from '../components/InlineSvg.svelte';
 	import Nav from '../components/Nav.svelte';
 </script>
 
@@ -9,6 +10,7 @@
 	@tailwind screens;
 </style>
 
+<InlineSvg></InlineSvg>
 <Nav/>
 
 <main>
