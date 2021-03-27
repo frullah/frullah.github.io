@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [
     './src/components/**/*.svelte',
@@ -5,7 +7,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: colors.indigo
+      }
+    }
   },
   variants: {
     extend: {}
