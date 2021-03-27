@@ -3,7 +3,10 @@
 </script>
 
 <style global lang="scss">
-	@import "../assets/tailwind";
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+	@tailwind screens;
 </style>
 
 <Nav/>
