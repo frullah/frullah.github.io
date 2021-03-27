@@ -8,11 +8,7 @@ import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 import config from 'sapper/config/rollup.js'
 import pkg from './package.json'
-import markdown from '@jackfranklin/rollup-plugin-markdown'
-import glob from 'rollup-plugin-glob'
 import alias from '@rollup/plugin-alias'
-
-const { preprocess } = require('./svelte.config')
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
@@ -26,7 +22,7 @@ const onwarn = (warning, onwarn) =>
 const aliases = alias({
   resolve: ['.svelte', '.js'],
   entries: [
-    { find: '@', replacement: 'src' }
+    { find: '@', replacement: path.resolve('src') }
   ]
 })
 
@@ -35,18 +31,18 @@ export default {
     input: config.client.input(),
     output: config.client.output(),
     plugins: [
-      aliases,  
-      markdown(),
-      glob(),
       replace({
-        'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode)
+        preventAssignment: true,
+        values: {
+          'process.browser': true,
+          'process.env.NODE_ENV': JSON.stringify(mode)
+        }
       }),
       svelte({
-        dev,
-        hydratable: true,
-        emitCss: true,
-        preprocess
+        compilerOptions: {
+          dev,
+          hydratable: true
+        }
       }),
       url({
         sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -88,18 +84,20 @@ export default {
     input: config.server.input(),
     output: config.server.output(),
     plugins: [
-      aliases,
-      markdown(),
-      glob(),
       replace({
-        'process.browser': false,
-        'process.env.NODE_ENV': JSON.stringify(mode)
+        preventAssignment: true,
+        values: {
+          'process.browser': false,
+          'process.env.NODE_ENV': JSON.stringify(mode)
+        }
       }),
       svelte({
-        generate: 'ssr',
-        hydratable: true,
-        dev,
-        preprocess
+        compilerOptions: {
+          dev,
+          generate: 'ssr',
+          hydratable: true
+        },
+        emitCss: false
       }),
       url({
         sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -112,7 +110,6 @@ export default {
       commonjs()
     ],
     external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
-
     preserveEntrySignatures: 'strict',
     onwarn
   },
@@ -123,13 +120,15 @@ export default {
     plugins: [
       resolve(),
       replace({
-        'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode)
+        preventAssignment: true,
+        values: {
+          'process.browser': true,
+          'process.env.NODE_ENV': JSON.stringify(mode)
+        }
       }),
       commonjs(),
       !dev && terser()
     ],
-
     preserveEntrySignatures: false,
     onwarn
   }

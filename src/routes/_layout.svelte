@@ -1,16 +1,16 @@
 <script>
-  export let segment;
-
-  import Navbar from "@/components/Layout/Navbar.svelte";
-  import InlineSvg from "@/components/Layout/InlineSvg.svelte";
-  import GlobalSnackbar from "@/components/GlobalSnackbar.svelte";
+	import Nav from '../components/Nav.svelte';
 </script>
 
-<style global src="./_layout.scss" lang="scss">
+<style global lang="scss">
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+	@tailwind screens;
 </style>
 
-<GlobalSnackbar />
-<InlineSvg />
+<Nav/>
 
-<Navbar {segment} />
-<slot />
+<main>
+	<slot></slot>
+</main>
