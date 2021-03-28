@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         primary: colors.indigo
       }
+    },
+    container: {
+      center: true
     }
   },
   variants: {
