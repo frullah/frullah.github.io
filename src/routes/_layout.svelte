@@ -1,5 +1,5 @@
 <script>
-  import InlineSvg from "../components/InlineSvg.svelte";
+  import InlineSvg from "../components/Layout/InlineSvg.svelte";
   import Nav from "../components/Nav.svelte";
 </script>
 
