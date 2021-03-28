@@ -23,7 +23,7 @@
 </script>
 
 <section id="technologies">
-  <div class="container my-4 p-4">
+  <div class="container my-4 p-4 max-w-screen-sm">
     <h2 class="text-xl text-center mb-4">My Tech Stacks</h2>
     <ul class="flex flex-wrap justify-center">
       {#each usedTechnologies as usedTechnology}
