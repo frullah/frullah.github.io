@@ -1,6 +1,6 @@
 <script>
+  import Nav from "@/components/Layout/Nav.svelte";
   import InlineSvg from "../components/Layout/InlineSvg.svelte";
-  import Nav from "../components/Nav.svelte";
 </script>
 
 <InlineSvg />
