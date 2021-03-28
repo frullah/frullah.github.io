@@ -1,11 +1,9 @@
 <script>
-  import Button from "./Button.svelte";
-  import Icon from "./Icon.svelte";
+  import Button from "../Button.svelte";
+  import Icon from "../Icon.svelte";
 
   let openNav = false;
-  const links = [
-    { href: "#home", text: "Home" }
-  ]
+  const links = [{ href: "#home", text: "Home" }];
 </script>
 
 <header

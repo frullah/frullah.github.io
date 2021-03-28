@@ -87,6 +87,7 @@ export default {
     input: config.server.input(),
     output: config.server.output(),
     plugins: [
+      aliases,
       replace({
         preventAssignment: true,
         values: {
@@ -122,7 +123,6 @@ export default {
     input: config.serviceworker.input(),
     output: config.serviceworker.output(),
     plugins: [
-      aliases,
       resolve(),
       replace({
         preventAssignment: true,
