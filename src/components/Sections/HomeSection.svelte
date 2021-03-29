@@ -31,7 +31,7 @@
       Hi, I am <strong aria-label="my name">Fajarullah</strong>
     </h1>
     <p aria-label="about me" class="text-center mb-4">
-      I am a Full Stack Engineer, I love to build web stuff. I often use
+      I am a Full Stack Engineer, I am passionate in web development, and I love to build web stuff to solve problem. I often use
       <a
         class="text-primary-600"
         rel="noopener"
