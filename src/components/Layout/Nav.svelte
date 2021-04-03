@@ -2,8 +2,12 @@
   import Button from "../Button.svelte";
   import Icon from "../Icon.svelte";
 
-  let openNav = false;
+  let navState = false;
   const links = [{ href: "#home", text: "Home" }];
+
+  function closeNav() {
+    navState = false;
+  }
 </script>
 
 <header
@@ -13,25 +17,22 @@
     <a class="text-2xl" href="#home">Fajarullah</a>
     <div class="flex-grow" />
     <div
-      on:click={() => (openNav = false)}
-      class:hidden={!openNav}
-      class="fixed inset-0 z-10 bg-gray-900 opacity-50 sm:hidden"
+      on:click={closeNav}
+      class:hidden={!navState}
+      class="fixed inset-0 z-10 bg-gray-900 opacity-50 sm:hidden hidden"
     />
 
-    <Button class="m-0 ml-2 block sm:hidden" on:click={() => (openNav = true)}>
+    <Button class="m-0 ml-2 block sm:hidden" on:click={() => (navState = true)}>
       <Icon class="text-xl" name="bars" />
     </Button>
 
-    <nav class:open={openNav}>
-      <Button
-        class="sm:hidden block ml-auto"
-        on:click={() => (openNav = false)}
-      >
+    <nav class:open={navState}>
+      <Button class="sm:hidden block ml-auto" on:click={closeNav}>
         <Icon class="text-2xl" name="times" />
       </Button>
       <ul>
         {#each links as link}
-          <li><a href={link.href}>{link.text}</a></li>
+          <li><a on:click={closeNav} href={link.href}>{link.text}</a></li>
         {/each}
       </ul>
     </nav>
