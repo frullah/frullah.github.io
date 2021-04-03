@@ -12,6 +12,17 @@
 
 <style global lang="scss">
   @tailwind base;
+
+  @layer base {
+    :root {
+      --text-body: theme("colors.gray.700");
+    }
+
+    body {
+      @apply text-body-color;
+    }
+  }
+
   @tailwind components;
   @tailwind utilities;
   @tailwind screens;

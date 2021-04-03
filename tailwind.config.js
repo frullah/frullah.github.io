@@ -11,6 +11,9 @@ module.exports = {
     extend: {
       colors: {
         primary: colors.indigo
+      },
+      textColor: {
+        'body-color': 'var(--text-body)'
       }
     },
     container: {
