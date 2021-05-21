@@ -1,5 +1,5 @@
 <script>
-  import HomeSection from "../components/Sections/HomeSection.svelte";
+  import ProfileSection from "../components/Sections/ProfileSection.svelte";
   import TechnologiesSection from "../components/Sections/TechnologiesSection.svelte";
 </script>
 
@@ -7,5 +7,5 @@
   <title>Fajarullah</title>
 </svelte:head>
 
-<HomeSection />
+<ProfileSection />
 <TechnologiesSection />
