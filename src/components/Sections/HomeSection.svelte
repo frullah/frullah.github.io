@@ -30,29 +30,36 @@
     <h1 aria-label="introduction" class="text-2xl text-center mb-4">
       Hi, I am <strong aria-label="my name">Fajarullah</strong>
     </h1>
-    <p aria-label="about me" class="text-center mb-4">
-      I am a Full Stack Engineer, and I like to code web. I often use
-      <a
-        class="text-primary-600"
-        rel="noopener"
-        target="_blank"
-        href="https://www.ruby-lang.org">Ruby</a
-      >, and
-      <a
-        class="text-primary-600"
-        rel="noopener"
-        target="_blank"
-        href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a
-      >
-      as my programming languages. When I have free time, sometime i learn about
-      machine learning, playing
-      <a
-        class="text-primary-600"
-        rel="noopener"
-        target="_blank"
-        href="https://osu.ppy.sh/users/5132441">osu!</a
-      >, watching animes, or learn foreign languages.
-    </p>
+    <article aria-label="about me" class="text-center mb-4">
+      <p>
+        I am a Full Stack Engineer, and I like to code to solve a problem.
+      </p>
+      <p>
+        I often use
+        <a
+          class="text-primary-600"
+          rel="noopener"
+          target="_blank"
+          href="https://www.ruby-lang.org">Ruby</a
+        >, and
+        <a
+          class="text-primary-600"
+          rel="noopener"
+          target="_blank"
+          href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a
+        >
+        as my programming languages.
+      </p>
+      <p>
+        Sometime in my free time, i learn about machine learning, learn foreign languages, or playing
+        <a
+          class="text-primary-600"
+          rel="noopener"
+          target="_blank"
+          href="https://osu.ppy.sh/users/5132441">Osu!</a
+        >.
+      </p>
+    </article>
 
     <ul aria-label="contact links" class="flex mx-auto justify-center">
       {#each contacts as contact}
