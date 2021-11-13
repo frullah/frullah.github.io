@@ -1,12 +1,10 @@
-const colors = require('tailwindcss/colors')
+const { colors } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  important: true,
+  mode: "jit",
   purge: [
-    './src/components/**/*.svelte',
-    './src/routes/**/*.svelte'
+    "./src/**/*.svelte"
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -20,8 +18,4 @@ module.exports = {
       center: true
     }
   },
-  variants: {
-    extend: {}
-  },
-  plugins: []
 }

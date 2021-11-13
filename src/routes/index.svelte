@@ -3,9 +3,5 @@
   import TechnologiesSection from "../components/Sections/TechnologiesSection.svelte";
 </script>
 
-<svelte:head>
-  <title>Fajarullah</title>
-</svelte:head>
-
 <ProfileSection />
 <TechnologiesSection />
