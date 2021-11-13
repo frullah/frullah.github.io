@@ -51,13 +51,7 @@
         as my programming languages.
       </p>
       <p>
-        Sometime in my free time, i learn about machine learning, learn foreign languages, or playing
-        <a
-          class="text-primary-600"
-          rel="noopener"
-          target="_blank"
-          href="https://osu.ppy.sh/users/5132441">Osu!</a
-        >.
+        Sometime in my free time, i learn about machine learning, learn foreign languages.
       </p>
     </article>
 
