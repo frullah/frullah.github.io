@@ -68,23 +68,3 @@
     </ul>
   </div>
 </section>
-
-<style global lang="scss">
-  .icon {
-    &.envelope {
-      @apply text-red-600;
-    }
-
-    &.github-square {
-      color: #333;
-    }
-
-    &.whatsapp-square {
-      color: #4fce5d;
-    }
-
-    &.linkedin {
-      color: #0e76a8;
-    }
-  }
-</style>

@@ -1,0 +1,9 @@
+@layer base {
+  :root {
+    --text-body: theme("colors.gray.700");
+  }
+
+  body {
+    color: var(--text-body);
+  }
+}

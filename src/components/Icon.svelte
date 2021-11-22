@@ -1,18 +1,14 @@
 <script>
-  export let name;
-  $$restProps.class = `icon ${$$restProps.class || ""}`
+	export let name;
+	$$restProps.class = `icon ${$$restProps.class || ''}`;
 </script>
 
-<style global lang="scss">
-  .icon {
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    overflow: visible;
-    fill: currentColor;
-  }
-</style>
-
 <svg {...$$restProps}>
-  <use href="#{name}"></use>
+	<use href="#{name}" />
 </svg>
+
+<style>
+	.icon {
+		@apply inline-block w-[1em] h-[1em] overflow-visible fill-current;
+	}
+</style>
