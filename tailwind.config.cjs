@@ -3,7 +3,8 @@ const { colors } = require('tailwindcss/defaultTheme')
 module.exports = {
   mode: "jit",
   purge: [
-    "./src/**/*.svelte"
+    "./src/components/**/*.svelte",
+    "./src/routes/**/*.svelte"
   ],
   theme: {
     extend: {
