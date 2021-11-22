@@ -14,9 +14,6 @@ module.exports = {
       textColor: {
         'body-color': 'var(--text-body)'
       }
-    },
-    container: {
-      center: true
     }
   },
 }
