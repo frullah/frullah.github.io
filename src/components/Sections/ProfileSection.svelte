@@ -37,7 +37,7 @@
 
 <section id="home">
 	<div class="mx-auto mt-4 max-w-screen-sm p-4">
-		<h1 aria-label="introduction" class="text-2xl text-center mb-4">
+		<h1 aria-label="introduction" class="mb-4 text-2xl text-center">
 			Hi, I am <strong aria-label="my name">Fajarullah</strong>
 		</h1>
 		<article aria-label="about me" class="text-center mb-4">
@@ -58,7 +58,7 @@
 			<p>Sometime in my free time, i learn about machine learning, learn foreign languages.</p>
 		</article>
 
-		<ul aria-label="contact links" class="flex mx-auto justify-center">
+		<ul aria-label="contact links" class="flex justify-center mx-auto">
 			{#each contacts as contact}
 				<li class="mx-1">
 					<ContactLink name={contact.name} content={contact.content} href={contact.href} />
