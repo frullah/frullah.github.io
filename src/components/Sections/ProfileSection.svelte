@@ -26,7 +26,7 @@
 </script>
 
 <section id="home">
-  <div class="max-w-screen-sm mx-auto mt-24 p-4">
+  <div class="mx-auto mt-24 max-w-screen-sm p-4">
     <h1 aria-label="introduction" class="text-2xl text-center mb-4">
       Hi, I am <strong aria-label="my name">Fajarullah</strong>
     </h1>
