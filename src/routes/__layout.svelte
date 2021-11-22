@@ -9,7 +9,7 @@
 </main>
 
 <style global lang="scss">
-	@use "../stylesheets/tailwind.css";
-	@use "../stylesheets/base.scss";
-	@use "../stylesheets/icons.scss";
+	@use '../stylesheets/tailwind.css';
+	@use '../stylesheets/base.scss';
+	@use '../stylesheets/icons.scss';
 </style>
