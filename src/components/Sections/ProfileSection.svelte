@@ -21,7 +21,12 @@
 			name: 'envelope',
 			content: 'frullah12@gmail.com',
 			href: 'mailto:frullah12@gmail.com'
-		}
+		},
+		{
+			name: 'codingame',
+			content: 'Codingame ID: frullah',
+			href: 'https://www.codingame.com/profile/5e3c0adf405d67aac36c0904e56ff16a7992341'
+		},
 	];
 </script>
 
