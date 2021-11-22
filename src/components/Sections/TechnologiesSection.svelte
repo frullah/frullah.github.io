@@ -2,24 +2,28 @@
   import Tag from "../Tag.svelte";
 
   const usedTechnologies = [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "Bootstrap",
-    "Stimulus JS",
-    "TailwindCSS",
-    "Python",
     "Ruby",
-    "Ruby on rails",
-    "Hotwire",
+    "Rails",
+    "Hotwire (Rails)",
+    "Stimulus JS",
+    "Javascript",
+    "HTML5",
+    "CSS3",
+    "TailwindCSS",
+    "Bootstrap",
     "PostgreSQL",
     "OracleDB",
     "MariaDB",
+    "Python",
+    "PHP",
     "Git",
     "Github",
     "Github Action",
     "Docker",
+    "Google Cloud Platform",
     "AWS",
+    "Flutter",
+    "Firebase"
   ];
 </script>
 
