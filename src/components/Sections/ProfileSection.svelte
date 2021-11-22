@@ -35,7 +35,7 @@
 	];
 </script>
 
-<section id="home">
+<section>
 	<div class="mx-auto mt-4 max-w-screen-sm p-4">
 		<h1 aria-label="introduction" class="mb-4 text-2xl text-center">
 			Hi, I am <strong aria-label="my name">Fajarullah</strong>
