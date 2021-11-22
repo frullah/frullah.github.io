@@ -27,6 +27,11 @@
 			content: 'Codingame ID: frullah',
 			href: 'https://www.codingame.com/profile/5e3c0adf405d67aac36c0904e56ff16a7992341'
 		},
+		{
+			name: 'codewars',
+			content: 'Codewars ID: frullah',
+			href: 'https://www.codewars.com/users/frullah'
+		},
 	];
 </script>
 
