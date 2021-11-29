@@ -55,7 +55,7 @@
 				>
 				as my programming languages.
 			</p>
-			<p>Sometime in my free time, i learn about machine learning, and learn foreign languages.</p>
+			<p>Sometime in my free time, i like to explore new technologies, learn about machine learning, and learn foreign languages.</p>
 		</article>
 
 		<ul aria-label="contact links" class="flex justify-center mx-auto">
