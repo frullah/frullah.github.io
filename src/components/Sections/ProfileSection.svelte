@@ -41,7 +41,7 @@
 			Hi, I am <strong aria-label="my name">Fajarullah</strong>
 		</h1>
 		<article aria-label="about me" class="text-center mb-4">
-			<p>I am a Full Stack Engineer, and I like to code to solve a problem.</p>
+			<p>I am a Full Stack Engineer, I like to code to solve problems.</p>
 			<p>
 				I often use
 				<a class="text-primary-600" rel="noopener" target="_blank" href="https://www.ruby-lang.org"
