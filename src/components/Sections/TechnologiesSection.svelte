@@ -7,6 +7,7 @@
 		'Hotwire (Rails)',
 		'Stimulus JS',
 		'Javascript',
+		'Typescript',
 		'HTML5',
 		'CSS3',
 		'TailwindCSS',
