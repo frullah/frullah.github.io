@@ -1,7 +1,7 @@
 <script>
 	import ProfileSection from '../components/Sections/ProfileSection.svelte';
-	import TechnologiesSection from '../components/Sections/TechnologiesSection.svelte';
+	import TechStackSection from '../components/Sections/TechStackSection.svelte';
 </script>
 
 <ProfileSection />
-<TechnologiesSection />
+<TechStackSection />
