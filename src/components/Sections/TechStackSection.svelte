@@ -29,7 +29,7 @@
 </script>
 
 <section id="technologies">
-	<div class="mx-auto my-6 max-w-screen-sm p-4">
+	<div class="mx-auto max-w-screen-sm py-8 px-4">
 		<h2 class="text-2xl text-center">My Tech Stacks</h2>
 		<ul class="mt-4 flex flex-wrap justify-center">
 			{#each usedTechnologies as usedTechnology}

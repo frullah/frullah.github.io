@@ -39,7 +39,7 @@
 </script>
 
 <section>
-	<div class="mx-auto my-6 max-w-screen-sm p-4">
+	<div class="mx-auto max-w-screen-sm py-8 px-4">
 		<div aria-label="introduction">
 			<h1>
 				<p class="text-2xl">Hi, I am</p>
