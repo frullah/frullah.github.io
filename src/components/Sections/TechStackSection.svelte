@@ -29,9 +29,9 @@
 </script>
 
 <section id="technologies">
-	<div class="mx-auto my-4 max-w-screen-sm p-4">
-		<h2 class="mb-4 text-xl text-center">My Tech Stacks</h2>
-		<ul class="flex flex-wrap justify-center">
+	<div class="mx-auto my-6 max-w-screen-sm p-4">
+		<h2 class="text-2xl text-center">My Tech Stacks</h2>
+		<ul class="mt-4 flex flex-wrap justify-center">
 			{#each usedTechnologies as usedTechnology}
 				<li class="mx-1 mb-2">
 					<Tag text={usedTechnology} />
