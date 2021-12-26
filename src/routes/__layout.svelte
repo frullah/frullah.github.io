@@ -4,6 +4,10 @@
 
 <InlineSvg />
 
+<svelte:head>
+	<title>Fajarullah - personal website</title>
+</svelte:head>
+
 <main>
 	<slot />
 </main>
