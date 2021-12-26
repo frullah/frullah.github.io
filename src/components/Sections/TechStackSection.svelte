@@ -24,7 +24,9 @@
 		'Google Cloud Platform',
 		'AWS',
 		'Flutter',
-		'Firebase'
+		'Firebase',
+		'NGINX',
+		'Apache'
 	];
 </script>
 
