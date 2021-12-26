@@ -33,32 +33,38 @@
 			href: 'https://www.codewars.com/users/frullah'
 		},
 	];
+
+	const name = "Fajarullah"
+	const role = "Full Stack Software Engineer"
 </script>
 
 <section>
 	<div class="mx-auto mt-4 max-w-screen-sm p-4">
-		<h1 aria-label="introduction" class="mb-4 text-2xl text-center">
-			Hi, I am <strong aria-label="my name">Fajarullah</strong>
-		</h1>
-		<article aria-label="about me" class="text-center mb-4">
-			<p>I am a Full Stack Engineer, I like to code to solve problems.</p>
+		<div aria-label="introduction">
+			<h1>
+				<p class="text-2xl">Hi, I am</p>
+				<strong aria-label="name" class="text-3xl">{name}</strong>
+			</h1>
+		</div>
+		<article aria-label="about me" class="mt-4 max-w-[480px]">
+			<p>A {role}, who like to code to solve problems.</p>
 			<p>
-				I often use
+				Often uses
 				<a class="text-primary-600" rel="noopener" target="_blank" href="https://www.ruby-lang.org"
 					>Ruby</a
-				>, and
+				> and
 				<a
 					class="text-primary-600"
 					rel="noopener"
 					target="_blank"
 					href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a
 				>
-				as my programming languages.
+				as programming languages.
 			</p>
-			<p>Sometime in my free time, i like to explore new technologies, learn about machine learning, and learn foreign languages.</p>
+			<p>I like to explore new technologies so that I can work efficiently, learn about machine learning, and learn foreign languages.</p>
 		</article>
 
-		<ul aria-label="contact links" class="flex justify-center mx-auto">
+		<ul aria-label="contact links" class="flex mx-auto mt-4">
 			{#each contacts as contact}
 				<li class="mx-1">
 					<ContactLink name={contact.name} content={contact.content} href={contact.href} />
