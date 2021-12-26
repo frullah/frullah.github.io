@@ -4,4 +4,5 @@
 </script>
 
 <ProfileSection />
+<hr>
 <TechStackSection />
