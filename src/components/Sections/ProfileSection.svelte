@@ -35,21 +35,33 @@
 	];
 
 	const name = "Fajarullah"
-	const role = "Full Stack Software Engineer"
+	const role = "software engineer"
 </script>
 
+
+<section class="py-4 bg-primary-100">
+	<div aria-label="introduction" class="text-center">
+		<h1>
+			<p class="text-2xl">Hi, I am</p>
+			<strong aria-label="name" class="text-3xl">{name}</strong>
+		</h1>
+		<h2 class="text-xl">A passionate {role}</h2>
+	</div>
+
+	<ul aria-label="contact links" class="flex justify-center mx-auto mt-4">
+		{#each contacts as contact}
+			<li class="mx-1">
+				<ContactLink name={contact.name} content={contact.content} href={contact.href} />
+			</li>
+		{/each}
+	</ul>
+</section>
 <section>
 	<div class="mx-auto max-w-screen-sm py-8 px-4">
-		<div aria-label="introduction">
-			<h1>
-				<p class="text-2xl">Hi, I am</p>
-				<strong aria-label="name" class="text-3xl">{name}</strong>
-			</h1>
-		</div>
-		<article aria-label="about me" class="mt-4 max-w-[480px]">
-			<p>A {role}, who like to code to solve problems.</p>
+		<h2 class="text-2xl">About me</h2>
+		<article aria-label="about me" class="mt-4 max-w-[560px]">
 			<p>
-				Often uses
+				I like to code to solve problems, mostly using 
 				<a class="text-primary-600" rel="noopener" target="_blank" href="https://www.ruby-lang.org"
 					>Ruby</a
 				> and
@@ -58,18 +70,10 @@
 					rel="noopener"
 					target="_blank"
 					href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a
-				>
-				as programming languages.
+				>.
 			</p>
-			<p>I like to explore new technologies so that I can work efficiently, learn about machine learning, and learn foreign languages.</p>
+			<p>I love new challenges, and explore new technologies to get things done effectively and efficiently.</p>
+			<p class="mt-4">I have interest in machine learning, and have hobby learning foreign languages.</p>
 		</article>
-
-		<ul aria-label="contact links" class="flex mx-auto mt-4">
-			{#each contacts as contact}
-				<li class="mx-1">
-					<ContactLink name={contact.name} content={contact.content} href={contact.href} />
-				</li>
-			{/each}
-		</ul>
 	</div>
 </section>
