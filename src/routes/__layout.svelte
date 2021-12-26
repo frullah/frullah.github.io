@@ -5,7 +5,7 @@
 <InlineSvg />
 
 <svelte:head>
-	<title>Fajarullah - personal website</title>
+	<title>Fajarullah personal website</title>
 </svelte:head>
 
 <main>
